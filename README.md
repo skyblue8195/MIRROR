@@ -15,20 +15,6 @@ User Problem
 +--- Reflection: Auto-revision on compile error (ModelingExpert + Compiler)
 ```
 
-## Key Features
-
-- **Chain-of-Experts**: Multi-stage decomposition with specialized expert agents
-- **Reflection**: Automatic revision loop on compile/runtime errors
-- **Few-shot Prompting**: Built-in support for subtype-specific examples
-- **Direct LLM Invocation**: Removed LCEL chain syntax; uses `SystemMessage` + `HumanMessage`
-
-## Important Notes
-
-> **RAG Status**: This version  does **NOT** include RAG retrieval.
-> The `--data_path` and `--persist_dir` arguments in `run_exp.py` are
-> **reserved for future integration** and have no effect in the current release.
-> RAG functionality is planned for a future version.
-
 ## Project Structure
 
 ```
