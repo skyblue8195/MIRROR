@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.idea/
+chroma_db/
+temp/
+*.log
+test_debug_output/
+test_results/
+.DS_Store
+Thumbs.db
