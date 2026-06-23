@@ -9,9 +9,6 @@ from agent_teams import (
     ModelingExpert,
     Compiler,
     ParaExtractor,
-    message_pool_p,
-    message_pool_m,
-    message_pool_c,
 )
 
 from utils.result import Result
@@ -80,8 +77,8 @@ def causal_agent(
     num_experts = len(all_experts)
     director = Solver(model_name, temperature, base_url=custom_base_url, api_key=api_key)
     message_pool = MessagePool(all_experts, visible_matrix=np.ones((num_experts, num_experts)))
-    message_pools_m = message_pool_m.MessagePool(experts_m, visible_matrix=np.ones((len(experts_m), len(experts_m))), mode="local")
-    message_pools_c = message_pool_c.MessagePool(experts_c, visible_matrix=np.ones((len(experts_c), len(experts_c))), mode="local")
+    message_pools_m = MessagePool(experts_m, visible_matrix=np.ones((len(experts_m), len(experts_m))), mode="local")
+    message_pools_c = MessagePool(experts_c, visible_matrix=np.ones((len(experts_c), len(experts_c))), mode="local")
     expert_stack = []
 
     def _log_pool(pool, stage=""):
