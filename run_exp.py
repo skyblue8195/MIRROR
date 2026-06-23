@@ -1,5 +1,5 @@
 """
-MIRROR - Run RAG Evaluation Experiment.
+MIRROR - Run Evaluation Experiment.
 
 Runs the Chain-of-Experts causal-agent pipeline over a JSONL dataset,
 evaluates each problem, and reports aggregate accuracy / error metrics.
@@ -11,7 +11,7 @@ NOTE:
     reserved for future integration but have no effect in the current version.
 
 Usage:
-    python run_rag_exp.py --dataset datasets/ComplexOR.jsonl --model qwen-plus-2025-09-11
+    python run_exp.py --dataset datasets/ComplexOR.jsonl --model qwen-plus-2025-09-11
 """
 
 import argparse

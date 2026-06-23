@@ -25,7 +25,7 @@ User Problem
 ## Important Notes
 
 > **RAG Status**: This version  does **NOT** include RAG retrieval.
-> The `--data_path` and `--persist_dir` arguments in `run_rag_exp.py` are
+> The `--data_path` and `--persist_dir` arguments in `run_exp.py` are
 > **reserved for future integration** and have no effect in the current release.
 > RAG functionality is planned for a future version.
 
@@ -34,7 +34,7 @@ User Problem
 ```
 MIRROR/
 ├── main.py                 # Chain-of-Experts pipeline entry
-├── run_rag_exp.py          # Batch evaluation script
+├── run_exp.py              # Batch evaluation script
 ├── requirements.txt        # Python dependencies
 ├── .env                    # API credentials (create your own, not tracked)
 ├── .gitignore
@@ -75,7 +75,7 @@ DASHSCOPE_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
 ### 3. Run Evaluation
 
 ```bash
-python run_rag_exp.py --dataset datasets/ComplexOR.jsonl --model qwen-plus-2025-09-11 --attempts 3
+python run_exp.py --dataset datasets/ComplexOR.jsonl --model qwen-plus-2025-09-11 --attempts 3
 ```
 
 ### 4. Run Single Problem
