@@ -106,23 +106,6 @@ answer, output, ref_acc = causal_agent(
 | `--data_path` | `None` | [Reserved] RAG file path |
 | `--persist_dir` | `None` | [Reserved] ChromaDB directory |
 
-## Supported Datasets
-
-| Dataset | Description |
-|---------|-------------|
-| `ComplexOR.jsonl` | Complex operations research problems |
-| `IndustryOR_fix.jsonl` | Industrial optimization problems |
-| `Mamo_complexLPfix.jsonl` | Complex linear programming |
-| `NL4opt.jsonl` | Natural language to optimization |
-
-## Version History
-
-| Version | Description |
-|---------|-------------|
-| v1 | Original LCEL chain-based implementation |
-| v2 | Direct LLM invocation. **No RAG**. |
-| v3 | Added Python interpreter, agentic RAG, memory management, middleware |
-
 ## License
 
 This project is provided for research purposes.
