@@ -1,6 +1,6 @@
 # MIRROR
 
-**M**ulti-agent **I**ntelligent **R**easoning and **R**esolution for **O**ptimization — a Chain-of-Experts framework that decomposes mathematical optimization problems into specialized agent stages: parameter extraction, mathematical modeling, and code generation, with optional reflection.
+**M**ulti-agent **I**ntelligent **R**easoning and **R**esolution for **O**ptimization — a Multi-Agent framework that decomposes mathematical optimization problems into specialized agent stages: parameter extraction, mathematical modeling, and code generation, with optional reflection.
 
 ## Architecture
 
